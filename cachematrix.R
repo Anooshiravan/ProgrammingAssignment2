@@ -1,5 +1,4 @@
 # The function makeCacheMatrix is a list of 4 functions to set a matrix, get a matrix, set an inversed matrix and get an inversed matrix
-
 makeCacheMatrix <- function(mtx = matrix()) {
     
     # Define inversed as NULL
@@ -38,6 +37,7 @@ makeCacheMatrix <- function(mtx = matrix()) {
         )
 }
 
+# Function to return matirx inversed, checking the cache first
 cacheSolve <- function(mtx, ...) {
     # Check if mtx is already in cache
     inversed <- mtx$getinverse()
